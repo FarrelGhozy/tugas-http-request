@@ -1,23 +1,33 @@
-# bun-react-template
+# Tugas Web Lanjutan — Pertemuan 3
 
-To install dependencies:
+**Nama:** Farrel Ghozy Affifudin
+**NIM:** 452024611053
+
+API sederhana data mahasiswa pakai **Bun + Elysia**.
+
+## Cara Menjalankan
 
 ```bash
 bun install
-```
-
-To start a development server:
-
-```bash
 bun dev
 ```
 
-To run for production:
+Server: `http://localhost:3006/mahasiswa`
+
+## Endpoint
+
+| Method | Endpoint | Kegunaan |
+| ------ | -------- | -------- |
+| GET | `/mahasiswa` | Ambil semua data |
+| GET | `/mahasiswa/:id` | Ambil satu data |
+| POST | `/mahasiswa` | Tambah data |
+| PUT | `/mahasiswa/:id` | Ubah semua data |
+| PATCH | `/mahasiswa/:id` | Ubah sebagian data |
+| DELETE | `/mahasiswa/:id` | Hapus data |
+| CONNECT | `/mahasiswa/:id` | Cek data |
+
+Contoh:
 
 ```bash
-bun start
+curl http://localhost:3006/mahasiswa
 ```
-
-This project was created using `bun init` in bun v1.4.2. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
-# tugas-http-request
-# tugas-http-request

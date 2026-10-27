@@ -1,9 +1,11 @@
 import {Elysia} from "elysia";
+import {cors} from "@elysiajs/cors";
 import {mahasiswaRoutes} from "./routes/mahasiswa";
 import {produkRoute} from "./routes/produk";
 
 const app = new Elysia();
 
+app.use(cors());
 app.use(mahasiswaRoutes);
 app.use(produkRoute);
 
